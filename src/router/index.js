@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import LoginView from "../views/LoginView.vue";
+// import { getAuth } from "firebase/auth";
 
 const routes = [
   {
@@ -18,6 +19,9 @@ const routes = [
     name: "dashboard",
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/DashboardView.vue"),
+    meta: {
+      authRequired: true,
+    },
   },
 ];
 

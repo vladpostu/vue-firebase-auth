@@ -33,9 +33,7 @@ export default {
 
       const auth = getAuth();
       signInWithEmailAndPassword(auth, this.email, this.password)
-        .then((userCredential) => {
-          const user = userCredential.user;
-          console.log(user);
+        .then(() => {
           this.$router.push("/dashboard");
         })
         .catch((error) => {
