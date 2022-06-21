@@ -1,17 +1,26 @@
 <template>
   <div>
-    <h1>Dashboard</h1>
-    <button id="sign_out" @click="signOut">Logout</button>
+    <div class="text-center">You're now logged as</div>
+    <div id="username_display" class="display-6">{{ this.email }}</div>
+    <button id="sign_out" class="mt-4 btn btn-danger" @click="signOut">
+      Logout
+    </button>
   </div>
 </template>
 
 <script>
 import { getAuth } from "firebase/auth";
 
+const auth = getAuth();
+
 export default {
+  data() {
+    return {
+      email: auth.currentUser.email,
+    };
+  },
   methods: {
     signOut() {
-      const auth = getAuth();
       auth
         .signOut()
         .then(() => {
