@@ -8,7 +8,7 @@ vue-firebase-auth is a web app that let you
 
 - **login** into the system
 - **register** if you dont have an account
-- **log-out** once you're 
+- **log-out** once you're in
 
 ### Dependencies
 
