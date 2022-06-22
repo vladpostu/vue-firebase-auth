@@ -1,24 +1,20 @@
 # vue-firebase-auth
 
-## Project setup
-```
-npm install
-```
+Simple email / password authentication using **Vue** Javascript framework and **Firebase**
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Description
 
-### Compiles and minifies for production
-```
-npm run build
-```
+vue-firebase-auth is a web app that let you 
 
-### Lints and fixes files
-```
-npm run lint
-```
+- **login** into the system
+- **register** if you dont have an account
+- **log-out** once you're 
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Dependencies
+
+- **VueJS** framework
+- **Google Firebase** 
+
+### Executing program
+
+Visit this [link](https://vladpostu.github.io/vue-firebase-auth/)
