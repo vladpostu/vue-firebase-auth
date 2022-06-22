@@ -1,5 +1,18 @@
 <template>
   <div class="background"></div>
+  <div class="navbar">
+    <nav class="nav">
+      <div class="nav-el" id="name_project">
+        <img src="./assets/logo.png" width="30" class="me-2" alt="" />
+        Vue Firebase Authentication
+      </div>
+      <div class="nav-el">
+        <a href="https://github.com/vladpostu/vue-firebase-auth" target="blank"
+          >GitHub Repo</a
+        >
+      </div>
+    </nav>
+  </div>
   <router-view id="content" />
 </template>
 
@@ -22,6 +35,31 @@
   height: 100vh;
   position: absolute;
   background: rgb(250, 250, 250);
+}
+
+.navbar {
+  background: #fafafa;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 70px;
+  box-shadow: 6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+.nav {
+  width: 80%;
+  min-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #fafafa;
+}
+
+#name_project {
+  font-weight: 700;
 }
 
 .container {
